@@ -6,13 +6,11 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
-import androidx.constraintlayout.helper.widget.Carousel.Adapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.mystudentdata.adapter.StudentAndUniversityAdapter
 import com.dicoding.mystudentdata.adapter.StudentListAdapter
 import com.dicoding.mystudentdata.adapter.StudentWithCourseAdapter
 import com.dicoding.mystudentdata.adapter.UniversityAndStudentAdapter
-import com.dicoding.mystudentdata.database.Student
 import com.dicoding.mystudentdata.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
