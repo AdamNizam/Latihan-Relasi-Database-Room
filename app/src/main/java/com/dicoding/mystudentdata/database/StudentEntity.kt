@@ -24,6 +24,7 @@ data class Course(
     val name: String,
 )
 
+// Many To One
 data class StudentAndUniversity(
     @Embedded
     val student: Student,
@@ -34,3 +35,16 @@ data class StudentAndUniversity(
     )
     val university: University? = null
 )
+
+// One To Many
+data class UniversityAndStudent(
+    @Embedded
+    val university: University,
+
+    @Relation(
+        parentColumn = "universityId",
+        entityColumn = "univId"
+    )
+    val student: List<Student>
+)
+
